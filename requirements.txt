@@ -19,7 +19,6 @@ google-auth==1.5.1
 google-auth-httplib2==0.0.3
 html5lib==1.0.1
 httplib2==0.14.0
-python-apt==2.0.0+ubuntu0.20.4.3
 python-dateutil==2.7.3
 python-debian===0.1.36ubuntu1
 pytz==2019.3
