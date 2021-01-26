@@ -21,10 +21,16 @@
     <div id="top-nav">
         <img style="width: 40px; padding-left:10px;" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg">
         <ul>
-            <div class="dropdown-menu" style="margin-right: 20px;">
+           <!--  <div class="dropdown-menu" style="margin-right: 20px;">
                 <a href="#section-3">About Us</a>
-            </div>
+
+            </div> -->
+            <button class="top-button" href="#section-3">About US</button>
             <button class="top-button" href="#section-7">Register Now</button>
+            <button class="top-button" href="#section-7">Our Experts</button>
+            <button class="top-button" href="#section-7">Blogs</button>
+            <button class="top-button" href="#section-7">Events</button>
+            <button class="top-button" href="#section-7">Write to US</button>
         </ul>
     </div>
 
@@ -109,7 +115,7 @@
                 <h3 class="heading">Register to our Community</h3>
                 <p class="description">The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
 
-                <form action="register" method="post">
+                <form action="/" method="post">
                     {% csrf_token %}
                     <input class="input-box" type="text" name="name" placeholder="Name"/>
                     <input class="input-box" type="text" name="phone_number" placeholder="Phone"/>
@@ -130,7 +136,7 @@
     </div>
         <!---------------------------------section-3--------------------------------->
     <div id="section-3">
-        <p id="section3-heading">FeMeal</p>
+        <p id="section3-heading" style="font-size:60px;">FeMeal</p>
         <h3>Our Team...</h3>
         <p id="section3-desc">A bunch of IIT Bombay Undergraduates on a mission to make the world a better place for PCOS affected women.</p>
 
@@ -155,7 +161,7 @@
 
             <div class="section3-item">
                 <a href="https://www.linkedin.com/in/rajatjain2001/">
-                <img src="I4.jpeg" />
+                <img src="{% static 'app/I4.jpeg' %}" />
                 </a>
                 <p class="desc">I love tinkering and finding solutions to and brainstorming on challenging problems. I am currently interested in exploring and working on projects which involve Computer Vision, Machine Learning or Algorithmic Trading. I have worked with some of the most affluential startups and companies and the experiences have been rewarding.</p>
                 <h3>RAJAT JAIN</h3>
@@ -166,7 +172,7 @@
                 <a href="https://www.linkedin.com/in/parth-laturia-b1805817a/">
                 <img src="{% static 'app/I3.jpeg' %}" />
                 </a>
-                <p class="desc">Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
+                <p class="desc">A CSE Undergrad and willing to put myself into any sort of technical and/or adventurous activity. Passionate and sincere about whatever I do. Ever-ready to make friends and contacts. Interested in Machine Learning, Data Science and anything involving Maths and Logic.</p>
                 <h3>PARTH LATURIA</h3>
                 <p>Undergrad, CSE IIT BOMBAY</p>
             </div>
