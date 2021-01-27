@@ -14,6 +14,7 @@ def register(request):
         x = RegUser.objects.create(name=name, phone_number = phone_number, email_address = email)
         x.save()
         print("done registering")
+        print(name, phone_number, email)
         # request.GET =
 
     return render(request, 'app/index.html')
