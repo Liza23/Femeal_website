@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import RegUser
 from django.views.decorators.csrf import csrf_exempt
 
@@ -18,3 +18,7 @@ def register(request):
         # request.GET =
 
     return render(request, 'app/index.html')
+
+def redirect_view(request):
+    response = redirect('blogs.html')
+    return response
