@@ -193,15 +193,18 @@
             <a>Know more about what we are working on </a>
             <ul class="section8-ul">
   				<li class="section8-li">
+
     			  <a class="section8-a" href="#">
+                  <img src="{% static 'app/Images/Instagram2x.svg' %}" style="height:10em; width:15em; display:block;margin: auto; ">
     			  <h2 class="section8-h2">Title #1</h2>
     			  <p class="section8-p">Text Content #1</p>
     			  </a>
   				</li>
   				<li class="section8-li">
-    				<a class="section8-li" href="#">
-    			    <h2 class="section8-h2">Title #2</h2>
-    		        <p class="section8-p">Text Content #2</p>
+    				<a class="section8-a" href="#">
+                    <img src="{% static 'app/Images/Instagram2x.svg' %}" style="height:10em; width:15em;display:block;margin:auto;">
+    			    <h2 class="section8-h2" >Title #2</h2>
+    		        <p class="section8-p">Text Content sjbcjdsn ksnjdns j sahdijhnk kdsbjkdbn aijnjn dswnjnkj dcswhijnw  #2</p>
     				</a>
   				</li>
 			</ul>
@@ -230,7 +233,18 @@
 
     </div>
 
-</main>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+
 <!-----------------Footer-section--------------------------------->
 <footer>
     © Copyright-All Rights Reserved Created by FeMeal || 15 Jan 2021

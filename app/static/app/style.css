@@ -5,6 +5,62 @@ body {
 }
 
 /*--------Top-nav----------*/
+body {
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 
 header {
   margin: 0px;
@@ -820,7 +876,7 @@ header {
 #section-8 {
   background-image: url("Images/blog3.jpeg");
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   opacity: 0.5;
   background-size: cover;
 }
@@ -848,11 +904,17 @@ header {
 h2.section8-h2 {
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0.8em;
 }
  
 p.section8-p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: normal;
+  position: relative;
+  text-align: center;
+  bottom: 1.6em;
 }
  
 ul.section8-ul,li.section8-li{
@@ -863,13 +925,13 @@ ul.section8-ul{
   flex-wrap: wrap;
   justify-content: center;
 }
-ul.section8-ul, li.section8-li, a.section8-a{
+ a.section8-a{
   text-decoration:none;
   color:#000;
   background:#ffc;
   display:block;
-  height:10em;
-  width:10em;
+  height:15em;
+  width:20em;
   padding:1em;
 }
 ul.section8-ul, li.section8-li{
