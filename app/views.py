@@ -19,6 +19,9 @@ def register(request):
 
     return render(request, 'app/index.html')
 
-def redirect_view(request):
-    response = redirect('blogs.html')
+def blogs_view(request):
+    print(request.GET)
+    print("hello2")
+    response = redirect('app/blogs.html')
+
     return response

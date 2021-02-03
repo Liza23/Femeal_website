@@ -19,6 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls'))
-    # path('/blogs.html', redirect_view)
+    # path('blogs', views.blogs_view)
     # path('', views.index, name='home')
 ]
