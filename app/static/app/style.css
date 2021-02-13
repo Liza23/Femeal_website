@@ -519,6 +519,110 @@ header {
   }
 }
 
+/*----------Section-9(Testimonial)-------------*/
+
+#section-9 {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  background: #5acdcd;
+}
+
+#section9-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 35px;
+}
+
+#section-9 > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#testimonials .desc {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+#testimonials {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.section9-item {
+  width: 25%;
+  text-align: center;
+  background-color: #f5f6fb;
+  padding: 40px 30px;
+  margin: 16px;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  transition: box-shadow 0.3s;
+}
+
+.section9-item:hover {
+  color: white;
+  background: #9df6e0;
+  transition: 1s ease;
+  box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06);
+}
+
+.section9-item img {
+  width: 80px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+.desc {
+  font-size: 14px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 720px) {
+  #section-9 {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  #section-9 > h3 {
+    font-size: 28px;
+  }
+  #testimonials {
+    flex-direction: column;
+  }
+  .section9-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .section9-item > h3 {
+    font-size: important 18px;
+  }
+}
+
 /*----------Section-4(Follow-us)-------------*/
 
 #section-4 {
