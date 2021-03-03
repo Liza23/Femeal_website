@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import RegUser
 from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponseRedirect
 
 @csrf_exempt
 def register(request):
@@ -19,9 +20,9 @@ def register(request):
 
     return render(request, 'app/index.html')
 
-def blogs_view(request):
-    print(request.GET)
+def blogs(request):
     print("hello2")
-    response = redirect('app/blogs.html')
-
-    return response
+    return render(request,'app/blogs.html')
+    # print(request.GET)
+    # response = redirect('app/blogs.html')
+    # return response
