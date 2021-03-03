@@ -10,3 +10,10 @@
 // button.onclick = function() {
 //   location.assign('https://stackoverflow.com/questions/52229901/navigate-to-route-on-button-click');
 // }
+
+$(document).ready(function () {
+  // MDB Lightbox Init
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+});
