@@ -14,37 +14,107 @@
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <!-- MDB eCommerce core CSS -->
-  <link rel="stylesheet" href="css/mdb-ecommerce.min.css">
+  
   <link rel="stylesheet" href="{% static 'app/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-
-
+ 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link rel="stylesheet" href="node_modules/mdb-ecommerce/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/mdb-ecommerce/css/mdb.min.css">
-  <link rel="stylesheet" href="node_modules/mdb-ecommerce/css/mdb.ecommerce.min.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="{% static 'js/jquery.fontstar.js' %}"></script>
+  <script type="text/javascript">
+    $('.star').fontstar();
+    $('.star').fontstar({
 
-  <script type="text/javascript" src="node_modules/mdb-ecommerce/js/jquery.min.js"></script>
-  <script type="text/javascript" src="node_modules/mdb-ecommerce/js/popper.min.js"></script>
-  <script type="text/javascript" src="node_modules/mdb-ecommerce/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="node_modules/mdb-ecommerce/js/mdb.min.js"></script>
-  <script type="text/javascript" src="node_modules/mdb-ecommerce/js/mdb.ecommerce.min.js"></script>
-  <script src="{% static 'app/script.js' %}"></script>
+  // custom icons
+  icon: "fa fa-star-o",
+  iconfull: "fa fa-star",
+
+  // color on hover
+  hovercolor: "#F39F25",
+
+  // star color
+  starcolor: "#969696",
+
+  // is selectable
+  selectable: true
+  
+});
+
+    $('.star').fontstar({
+  // options here
+},function(value,self){
+  console.log("hello "+value);
+});
+     function increment() {
+      document.getElementById('demoInput').stepUp();
+      console.log(document.getElementById('demoInput').value);
+      document.getElementById('price').value = String(285*document.getElementById('demoInput').value);
+      console.log(document.getElementById('price').value);
+   }
+   function decrement() {
+      document.getElementById('demoInput').stepDown();
+      document.getElementById('price').value = 285*document.getElementById('demoInput').value;
+   }
+  </script>
+  <style>
+    button{
+      background-color: rgb(170, 210, 54);
+      color: white;
+     
+      padding: 0em 0.5em;
+  }
+  .sm{
+     height: 2em;
+  }
+  .bg{
+    height: 4em;
+  }
+  </style>
 </head>
 
 
+<header>
+  <div id="top-nav">
+        <!-- <img style="width: 40px; padding-left:10px;" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg"> -->
+        <img style="width: 60px; padding-left:10px;" src="{% static 'app/Images/logo.jpeg' %}">
+        <ul>
+           <!--  <div class="dropdown-menu" style="margin-right: 20px;">
+                <a href="#section-3">About Us</a>
 
+            </div> -->
+            <!-- <a href="#section-3">About us</a> -->
+            <!-- <button class="top-button" id="b1" href="#section-3">About us</button> -->
+            <button class="top-button" onclick="window.location.href='#section-7';">Register Now</button>
+            <button class="top-button" onclick="window.location.href='#section-3';">About us</button>
+            <button class="top-button" onclick="window.location.href='#section-7';">Our Experts</button>
+            <button class="top-button" onclick="window.location.href='#section-8';">Our Blogs</button>
+            <button class="top-button" onclick="window.location.href='#section-7';">Write to us</button>
+            <!-- <button class="top-button" onclick="window.location.href='#section-9';">Ingredient Kits</button> -->
+            <!-- <button class="top-button" onclick="window.location.href='#blogs.html';">Blogs</button> -->
+            <!-- <button class="top-button" onclick="window.location.href=/blogs">Blogs</button> -->
+            <a class="top-button" href=blogs>Our Kits</a>
+            
+            <button class="top-button" onclick="window.location.href='#section-7';">Events</button>
+           
+            <!-- <a href="./blogs.html"> abc</a> -->
+            
+        </ul>
+    </div>
+
+</header>
 
 <main>
 <!-- -------------------------------section-8------------------------------- -->
     <!--Section: Block Content-->
 <section class="mb-5">
 
-  <div class="row">
+  <div class="row" style="background-color:white;">
     <div class="col-md-6 mb-4 mb-md-0">
 
       <div id="mdb-lightbox-ui"></div>
@@ -52,12 +122,141 @@
       <div class="mdb-lightbox">
 
         <div class="row product-gallery mx-1">
-
-          <div class="col-12 mb-0">
+          <h2 class="bold" style="margin-left:12vw;margin-top:15vh;position:relative"> Ingredient Kits</h2>
+          <div class="col-12 mb-0" style="display:flex;">
             <!-- <figure class="view overlay rounded z-depth-1 main-img"> -->
               <!-- <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" data-size="710x823"> -->
                 <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" class="img-fluid z-depth-1">   -->
-                  <img class="center" src="{% static 'app/Kit.jpeg' %}" />
+
+                  <img class="center" style=" max-width:50vw; max-height:50vh;
+    margin-left: 10vw;
+    margin-top: 5vh;" src="{% static 'app/kit-pic.jpeg' %}" />
+                  <div style="    margin-top: 2vh;
+    margin-left: 5vw;
+    position: relative;">
+                    <h2>About this Kit:</h2>
+                    <p style="width:30vw;">
+                      
+                      This kit is well-designed and researched and contains many nutritious elements
+                      like zinc, calcium, potassium and is rich in fibre, carbohydrates and has a low GI.
+                    </p>
+                    <select class="star" name="">
+                      <option>Rate this!</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <h3 > Rs <span id="price">285</span>/- </h3>
+                    
+                    <button class="sm" onclick="decrement()">-</button>
+                    <label> Quantity:</label>
+                    <input id=demoInput type=number min=1 max=110>
+                    <button class="sm" onclick="increment()">+</button> <br><br>
+                    <div style="display:flex">
+                    <button style="margin-right:2em;" class="bg">Buy Now</button>
+
+                    <button class="bg"><i class="fa fa-shopping-cart" style="padding:0.5em;"></i>Add to Cart</button>
+                    </div>
+                    <h3> Breakdown </h3>
+                    
+            
+        <table class="table">
+  <thead class="thead-dark" style="background-color: black; color:white; ">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ingredient</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Calories</th>
+      <th scope="col">Benefits</th>
+      <th scope="col">Sample Dish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Millet</td>
+      <td>100g</td>
+      <td>240</td>
+      <td>Fibre Rich</td>
+      <td><a href="https://www.instagram.com/p/ByFfMqyoXXU/">Millet Idly</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Black Rice</td>
+      <td>100g</td>
+      <td>160</td>
+      <td>High Proteins</td>
+      <td><a href="https://www.mariaushakova.com/2018/03/how-to-cook-black-rice/">Rice</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Chia Seeds</td>
+      <td>50g</td>
+      <td>244.5</td>
+      <td>Protein</td>
+      <td><a href="https://feelgoodfoodie.net/recipe/3-ingredient-chia-pudding/">Chia Seed Pudding</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Coconut Milk</td>
+      <td>100g</td>
+      <td>230</td>
+      <td>Iron, Zinc</td>
+      <td><a href="https://feelgoodfoodie.net/recipe/3-ingredient-chia-pudding/">Chia Seed Pudding</a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Pumpkin Seeds</td>
+      <td>50g</td>
+      <td>223</td>
+      <td>Increases Progrestrone Level</td>
+      <td><a href="https://www.instagram.com/p/ButY7q9ghLC/">Chia Seed Pudding</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Makhana</td>
+      <td>50g</td>
+      <td>90</td>
+      <td>Rich in minerals</td>
+      <td><a href="https://wellnessmunch.com/10-best-indian-instant-snack-ideas-for-pcod/">Roasted Makhana</a></td>
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+      <td>Quinoa</td>
+      <td>100g</td>
+      <td>222</td>
+      <td>High in fiber</td>
+      <td><a href="https://conquerpcos.org/tawa-quinoa/">Tawa Quinoa</a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Flax Seeds</td>
+      <td>50g</td>
+      <td>250</td>
+      <td>Omega 3</td>
+      <td><a href="https://www.jessicagavin.com/flaxseed-benefits/">Smoothies & Salad</a></td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Oats</td>
+      <td>50g</td>
+      <td>194.5</td>
+      <td>Low GI</td>
+      <td><a href="https://www.tarladalal.com/cauliflower-and-oats-tikki-39905r">Cauliflower & Oats Tikki</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Total</th>
+      <td></td>
+      <td></td>
+      <td>1854</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
               <!-- </a> -->
             <!-- </figure> -->
              <!-- <figure class="view overlay rounded z-depth-1" style="visibility: hidden;"> -->
@@ -123,9 +322,9 @@
       </div>
 
     </div>
-    <!-- <div class="col-md-6"> -->
+    <div class="col-md-6">
 
-      <!-- <h5>Fantasy T-shirt</h5> -->
+      
       <!-- <p class="mb-2 text-muted text-uppercase small">Shirts</p> -->
       <!-- <ul class="rating"> -->
         <!-- <li> -->
